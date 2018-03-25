@@ -440,8 +440,8 @@ class App extends Component {
                 <label htmlFor="input" id="label">Enter your Remme address</label>
                 <input type="text" id="input" placeholder="Remme address"/>
 
-                <label htmlFor="input" id="label">How mach you would like to swap?</label>
-                <input type="text" id="input" />
+                <label htmlFor="input" id="label">How much you would like to swap?</label>
+                <input type="text" id="input" placeholder="How much you would like to swap"/>
                 <button id="button" onClick={this.handleSendTransaction}>GO!</button>
 
                 {
