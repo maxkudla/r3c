@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>R3C</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            color: #051f40;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #54a9f4;
+            background-image: url('./bg.svg');
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+
+            font-family: sans-serif;
+
+        }
+        #input{
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: rgba(255,255,255,0.5);
+        }
+        #input:focus{
+            outline: none;
+        }
+
+        #button{
+            border: 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 17px;
+            color: #FFFFFF;
+            background-color: #ee0086;
+            width: 320px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+
+        #button:focus{
+            outline: none;
+        }
+
+        #label{
+            color: #19467d;
+            font-size: 13px;
+            width: 320px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-bottom: 20%">
+        <h1>SWAP YOUR TOKENS</h1>
+        <label for="input" id="label">Enter your Remme address</label>
+        <input type="text" id="input" placeholder="Remme address">
+        <button id="button">GO!</button>
+    </div>
+</body>
+</html>

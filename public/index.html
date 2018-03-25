@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>R3C</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      color: #051f40;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      background-color: #54a9f4;
+      background-image: url('bg.svg');
+      background-size: contain;
+      background-position: bottom;
+      background-repeat: no-repeat;
+
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+
+      font-family: sans-serif;
+
+    }
+    #input{
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: rgba(255,255,255,0.5);
+    }
+    #input:focus{
+      outline: none;
+    }
+
+    #button{
+      border: 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 17px;
+      color: #FFFFFF;
+      background-color: #ee0086;
+      width: 320px;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+    #button:focus{
+      outline: none;
+    }
+
+    #label{
+      color: #19467d;
+      font-size: 13px;
+      width: 320px;
+      text-align: left;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    .modal{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-body{
+      background: rgba(255,255,255,0.95);
+      border-radius: 15px;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+</body>
+</html>
