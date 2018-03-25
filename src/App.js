@@ -353,7 +353,8 @@ class App extends Component {
         super(props, context);
 
         this.state = {
-            balance: null
+            balance: null,
+            minus: 0
         }
     }
 
@@ -414,7 +415,8 @@ class App extends Component {
         contract.approve(gate, 1, (result) => {
             console.log("asdfasdf")
             this.setState({
-                modal: true
+                modal: true,
+                minus: document.getElementById("count").value
             }, () => {
                 setTimeout(()=>{
                     this.setState({
@@ -433,15 +435,15 @@ class App extends Component {
                 <h1>SWAP YOUR TOKENS</h1>
                 {
                     this.state.balance && (
-                        <h3>You have { this.state.balance.toString()/10000} REM</h3>
+                        <h3>You have { this.state.balance.toString()/10000 - this.state.minus} REM</h3>
                     )
                 }
 
                 <label htmlFor="input" id="label">Enter your Remme address</label>
                 <input type="text" id="input" placeholder="Remme address"/>
 
-                <label htmlFor="input" id="label">How much you would like to swap?</label>
-                <input type="text" id="input" placeholder="How much you would like to swap"/>
+                <label htmlFor="count" id="label">How much you would like to swap?</label>
+                <input type="text" id="count" placeholder="How much you would like to swap"/>
                 <button id="button" onClick={this.handleSendTransaction}>GO!</button>
 
                 {
