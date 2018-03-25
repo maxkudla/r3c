@@ -420,7 +420,7 @@ class App extends Component {
                     this.setState({
                         relax: true
                     })
-                }, 2000)
+                }, 4000)
             })
         })
 
